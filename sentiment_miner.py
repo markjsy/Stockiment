@@ -32,7 +32,7 @@ trending_stocks = api.get_trending_stocks()
 trending_stock_symbols = [stock['symbol'] for stock in trending_stocks]
 
 # Getting list of investopedia portfolio stocks
-client = Account("mark.jesse.sy@gmail.com", "mjsy27749")
+client = Account("email", "pass")       # CHANGE ME
 status = client.get_portfolio_status()
 portfolio = status.portfolio
 
