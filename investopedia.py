@@ -19,7 +19,6 @@ class Duration(Enum):
     day_order = 1
     good_cancel = 2
 
-
 Status = namedtuple("Status", "account_val buying_power cash annual_return portfolio")
 
 
@@ -52,7 +51,6 @@ class Account:
         buying power, cash on hand, and annual return.
         Annual return is a percentage.
         """
-
         response = self.fetch('/simulator/portfolio/')
         html = response.read()
         parsed_html = BeautifulSoup(html, "html.parser")
@@ -75,8 +73,7 @@ class Account:
 
         portfolio = list(portfolio[:-3])
 
-
-
+        
         # We want our returned values to be floats
         # Use regex to remove non-numerical or decimal characters
         regexp = "[^0-9.]"
