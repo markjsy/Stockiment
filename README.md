@@ -1,5 +1,5 @@
 # Stockiment
-A few scripts I hacked together in a weekend to track how public sentiment (tweets) correlates with public sentiment
+A few scripts I hacked together in a weekend to track how public sentiment (tweets) correlates with market sentiment
 
 
 ## api.py ##
@@ -12,7 +12,7 @@ A few scripts I hacked together in a weekend to track how public sentiment (twee
   Get dataframe of longterm sentiment from Quandl datasource
 
 ## sentiment_miner.py ##
-  Quanitfies sentiment score from current portfolio as well as top trending stocks from StockTwits and adds to database
+  Does the scraping and quanitfies sentiment score using current portfolio as well as top trending stocks from StockTwits.
 
 ## stockiment ##
-  Buys the top stocks (highest sentiment) on investopedia. Runs a cronjob periodically.
+  Buys the top stocks (highest sentiment) on Investopedia. Runs a cronjob periodically.
