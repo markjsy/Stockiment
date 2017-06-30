@@ -15,4 +15,4 @@ A few scripts I hacked together in a weekend to track how public sentiment (twee
   Does the scraping and quanitfies sentiment score using current portfolio as well as top trending stocks from StockTwits.
 
 ## stockiment ##
-  Buys the top stocks (highest sentiment) on Investopedia. Runs a cronjob periodically.
+  Buys the top stocks (highest sentiment) on Investopedia.
